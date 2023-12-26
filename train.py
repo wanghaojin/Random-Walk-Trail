@@ -3,8 +3,9 @@ import argparse
 from utils import *
 from tqdm import tqdm
 from torch import optim
-from model import SEGC
 import torch.nn.functional as F
+import randomwalk
+import kmeans_gpu
 
 
 parser = argparse.ArgumentParser()
@@ -65,3 +66,25 @@ for args.dataset in ["cora", "citeseer", "amap", "bat", "eat", "uat"]:
     features = X
     true_labels = y
     adj = sp.csr_matrix(A)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
